@@ -1,0 +1,104 @@
+@media only screen and (max-width: 600px) {
+  .splash {
+    left: 20%;
+
+    .splash-title {
+      top: 50%;
+      left: 4%;
+      letter-spacing: 5px;
+    }
+
+    .splash-title::after {
+      height: 4px;
+      bottom: -35px;
+    }
+  }
+
+  .splash-inner{
+    h1 {
+      font-size: 25px;
+    }
+
+    .discover {
+      left: 30%;
+    }
+
+    .icon-arrow {
+      left: 45%;
+    }
+  }
+
+  .section-title {
+    font-size: 40px;
+    margin-bottom: 10px;
+
+    &::after {
+      width: 370px;
+      bottom: -100px;
+    }
+  }
+
+  .product-list :nth-child(2) {
+    .product__left {
+      order: 1;
+    }
+
+    .product__right {
+      order: 2;
+    }
+  }
+
+  .product {
+    padding-bottom: 0;
+  }
+
+  #info {
+    .desc-info {
+      font-size: 25px;
+    }
+
+    h2::after {
+      bottom: -4px;
+      left: 50%;
+      width: 340px;
+    }
+  }
+
+  h3 {
+    font-size: 25px;
+  }
+
+  .form {
+    p {
+      font-size: 25px;
+      letter-spacing: 1px;
+    }
+
+    input {
+      width: 350px;
+      height: 60px;
+      font-size: 25px;
+    }
+
+    textarea {
+      width: 350px;
+      height: 152px;
+      margin: 0 auto;
+      padding: 15px 15px;
+      font-size: 20px;
+
+    }
+
+    button {
+      font-size: 20px;
+      letter-spacing: 5px;
+      width: 200px;
+      height: 60px;
+    }
+  }
+
+  #discover-2::after {
+    bottom: -26%;
+  }
+
+}
