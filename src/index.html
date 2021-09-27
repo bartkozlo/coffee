@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;0,900;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <title>El Tigre - Venezuela Coffee Beans</title>
+</head>
+<body>
+
+  <header class="splash">
+    <div class="container">
+      <nav class="navigation">
+        <div class="row">
+          <div class="col-4 logo">
+            <p>EL TIGRE</p>
+            <p>VENEZUELA COFFEE BEANS</p>
+          </div>
+          <div class="col-8 nav">
+            <a class="nav-link" href="#home" id="firstPage">Home</a>
+            <a class="nav-link" href="#section-product" id="middlePage">Products</a>
+            <a class="nav-link" href="#contact" id="lastPage">Contact</a>
+          </div>
+        </div>
+      </nav>
+      <div class="splash-inner">
+        <h1 class="splash-title">home of<br><span class="span">original tastes</span></h1>
+        <a href="#discover" class="splash-button discover">DISCOVER</a>
+        <a href="#discover"><i class="icon-arrow discover"></i>wrap</a>
+      </div>
+    </div>
+  </header>
+
+  <div id="pages">
+    <section id="home">
+      <div class="home-container container"></div>
+    </section>
+    <section id="section-product">
+      <h2 id="discover" class="section-title">products</h2>
+      <div id="product-list" class="product-list container"></div>
+    </section>
+    <section id="info">
+      <h2 class="section-title ">about us</h2>
+      <div class="container">
+        <p class="desc-info">Who are we? Just a bunch of friends with a love for a good coffee and desire to create
+          something new, something
+          original. Our coffees reflect us – young, wild and free. We are on the journey of new tastes...</p>
+        <p class="desc-info info-2">Join us!</p>
+      </div>
+    </section>
+    <section class="hide" id="contact" style="display: none;">
+      <h2 id="discover-2" class="section-title">contact us</h2>
+      <div class="container">
+        <form class="form" action="mailto:bartkozlo@gmail.com" method="post">
+          <p>NAME</p>
+          <input type="text" required>
+          <p>TITLE</p>
+          <input type="text" required>
+          <p>MESSAGE</p>
+          <textarea  required></textarea>
+          <button class="form-button" type="submit">SUBMIT</button>
+        </form>
+      </div>
+    </section>
+    <section id="footer">
+      <p>&copy; 2021 EL TIGRE inc.</p>
+    </section>
+  </div>
+
+    <script id="template-product" type="text/x-handlebars-template">
+      <article class="product active"> <!-- product -->
+
+        <div class="container">
+          <div class="row">
+            <div class="product__left col-sm-6">
+              <header class="product__header">
+                <h3 class="product__title">{{ title }}</h3>
+              </header>
+              <div class="row">
+                <p class="product-border col-3"></p>
+                <p class="col-9 product-description">{{{ description }}}</p>
+              </div>
+              <div class="product-characteristics">
+                <h4>Roasting: <span>{{{ roasting }}}</span></h4>
+                <h4>Intensity: <span>{{{ intensity }}}</span></h4>
+              </div>
+            </div>
+            <div class="product__right col-sm-6">
+              <div class="product__images">
+                <img class="img-fluid" src="{{{ image }}}" alt="#">
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </article> <!-- .product -->
+    </script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.0/handlebars.min.js"></script>
+  <script src="js/app.js" type="module"></script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+.product {
+  padding-bottom: 75px;
+  position: relative;
+
+  .product-border {
+    position: relative;
+    top: 11px;
+    left: 12px;
+    border-top: 5px solid $color-main;
+  }
+
+  .product-description {
+    padding: 0 90px 0 34px;
+    color: $color-grey;
+    font-weight: 600;
+  }
+
+  .product-characteristics {
+    margin-top: 40px;
+    padding-left: 15px;
+
+    span {
+      color: $color-main;
+    }
+  }
+}
+
+.product-list :nth-child(2) {
+  .product__left {
+    order: 2;
+  }
+
+  .product__right {
+    order: 1;
+  }
+}

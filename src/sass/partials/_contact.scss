@@ -1,0 +1,46 @@
+.hide {
+  h2 {
+    margin-bottom: 50px;
+  }
+}
+
+.form {
+  text-align: center;
+
+  p {
+    font-size: 30px;
+    font-weight: $font-bold;
+    letter-spacing: 3px;
+  }
+
+  input {
+    width: 528px;
+    height: 75px;
+    border: 3px solid $color-dark;
+    font-size: 25px;
+    padding-left: 15px;
+  }
+
+  textarea {
+    display: block;
+    width: 528px;
+    height: 152px;
+    margin: 0 auto;
+    padding: 15px 15px;
+    border: 3px solid $color-dark;
+    font-size: 30px;
+    resize: none;
+  }
+
+  button {
+    font-size: 30px;
+    font-weight: $font-bold;
+    letter-spacing: 7px;
+    width: 246px;
+    height: 83px;
+    margin: 48px auto 100px;
+    border: none;
+    color: $color-light;
+    background-color: $color-main;
+  }
+}
