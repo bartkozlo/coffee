@@ -1,41 +1,22 @@
 @media only screen and (max-width: 600px) {
   .splash {
     .splash-inner {
-      height: calc(100vh - 240px);
-    }
+      h1,
+      p {
+        font-size: 35px;
+        text-align: center;
+      }
 
-    .splash-title {
-      margin-top: 40px;
-      position: relative;
-      top: 54px;
-    }
+      h1 {
+        margin-top: 30px;
+      }
 
-    .splash-inner p {
-      font-size: 30px;
-      position: static;
-      text-align: center;
-
-      &::after {
-        bottom: 160px;
-        left: 80px;
-        width: 164px;
+      p {
+        &::after {
+          display: none;
+        }
       }
     }
-
-    .splash-button,
-    .icon-arrow {
-      font-size: 30px;
-    }
-
-    .icon-arrow {
-      left: 45px;
-    }
-  }
-
-  .splash-title {
-    font-size: 30px;
-    text-align: center;
-    margin-top: 0;
   }
 
   h2 {
@@ -97,13 +78,13 @@
     }
 
     input {
-      width: 350px;
+      width: 300px;
       height: 60px;
       font-size: 25px;
     }
 
     textarea {
-      width: 350px;
+      width: 300px;
       height: 152px;
       margin: 0 auto;
       padding: 15px 15px;
@@ -119,3 +100,68 @@
     }
   }
 }
+
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
+  .splash {
+    .splash-inner {
+      h1,
+      p {
+        font-size: 60px;
+        text-align: center;
+      }
+
+      h1 {
+        margin-top: 150px;
+      }
+
+      p {
+        &::after {
+          display: none;
+        }
+      }
+    }
+  }
+
+  #discover {
+    margin-bottom: 10px;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  #discover-2{
+    &::after {
+      display: none;
+    }
+  }
+
+  #info {
+    h2::after {
+      display: none;
+    }
+  }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1600px) {
+  .splash {
+    .splash-inner {
+      h1,
+      p {
+        font-size: 60px;
+        text-align: center;
+      }
+
+      h1 {
+        margin-top: 150px;
+      }
+
+      p {
+        &::after {
+          display: none;
+        }
+      }
+    }
+  }
+}
+

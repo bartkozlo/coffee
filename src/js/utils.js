@@ -30,21 +30,7 @@ document.getElementById('lastPage')
     document.getElementById('contact').style.display = 'block';
   }, false);
 
-// const switchDiscover = function () {
 
-//   const link = document.getElementsByClassName('discover');
-
-//   window.open(
-//     link.href,
-//     '_blank'
-//   );
-
-//   link.innerHTML = '#href="discover-2"';
-
-//   return false;
-
-// };
-// switchDiscover();
 
 
 
